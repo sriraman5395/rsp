@@ -76,7 +76,7 @@ export const MapViewer: React.FC<MapViewerProps> = ({
 
   const API_BASE =
     (import.meta as any)?.env?.VITE_API_URL ||
-    "http://localhost:5000";
+    "";
 
 fetch(`${API_BASE}/api/markers/${selectedMarkerId}/images`)
   .then(res => res.json())
